@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Bolierplate</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="content">
+		<div class="chat">
+			<div class="chat__body">
+				<ul class="chat__inner js-msgList">
+
+				</ul>
+			</div>
+			<div class="chat__controls">
+				<input type="text" 
+					   class="chat__input js-input"
+					   placeholder="New best message ever">
+				<button class="btn js-send">Send</button>
+				<button class="btn -sticker js-openStickerModal">😈</button>
+				<input type="file" id="file-input" class="">
+				<label for="file-input" title="Прикрепить файл" class="file-input-label">+</label>
+
+				<div class="overlay js-overlay"></div>
+
+				<div class="sticker-modal js-stickerModal">
+					<ul class="sticker-modal__list">
+						<!-- THERE WILL BE STICKERS -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="image-viewer hidden">
+		<img id="image-viewer-container">
+	</div>
+
+	<script type="text/javascript" src="assets/scripts/jquery.js"></script>
+	<script type="text/javascript" src="assets/scripts/moment.js"></script>
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+</body>
+</html>
